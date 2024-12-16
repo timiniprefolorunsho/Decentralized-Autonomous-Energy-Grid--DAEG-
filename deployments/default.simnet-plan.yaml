@@ -54,4 +54,9 @@ plan:
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/energy-token.clar
             clarity-version: 2
+        - emulated-contract-publish:
+            contract-name: pricing-oracle
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/pricing-oracle.clar
+            clarity-version: 2
       epoch: "2.5"

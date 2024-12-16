@@ -19,3 +19,5 @@ C
 contracts/daeg.clar,2/2/2229b5ca553e79a1cf8d60670ef7ed182207ad0f
 B
 tests/daeg.test.ts,8/0/8011ae8af8f25f9a8ff2b42a931c23e0b60048d6
+M
+contracts/energy-trading.clar,6/d/6d7212ff31b8b2c7ed59770341c7a8a4407ae036

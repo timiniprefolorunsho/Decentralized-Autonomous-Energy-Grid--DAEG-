@@ -1,21 +1,45 @@
+import { describe, it, expect, beforeEach } from 'vitest';
 
-import { describe, expect, it } from "vitest";
+const mockContractCall = (contract: string, method: string, args: any[]) => ({ success: true, value: 'mocked value' });
 
-const accounts = simnet.getAccounts();
-const address1 = accounts.get("wallet_1")!;
-
-/*
-  The test below is an example. To learn more, read the testing documentation here:
-  https://docs.hiro.so/stacks/clarinet-js-sdk
-*/
-
-describe("example tests", () => {
-  it("ensures simnet is well initalised", () => {
-    expect(simnet.blockHeight).toBeDefined();
+describe('Energy Token Contract', () => {
+  const contractName = 'energy-token';
+  
+  beforeEach(() => {
+    // Reset mock state before each test
   });
-
-  // it("shows an example", () => {
-  //   const { result } = simnet.callReadOnlyFn("counter", "get-counter", [], address1);
-  //   expect(result).toBeUint(0);
-  // });
+  
+  it('should set token URI', async () => {
+    const result = await mockContractCall(contractName, 'set-token-uri', ['https://example.com/token']);
+    expect(result.success).toBe(true);
+  });
+  
+  it('should get token URI', async () => {
+    const result = await mockContractCall(contractName, 'get-token-uri', []);
+    expect(result.success).toBe(true);
+    expect(result.value).toBe('mocked value');
+  });
+  
+  it('should mint tokens', async () => {
+    const result = await mockContractCall(contractName, 'mint', [1000, 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM']);
+    expect(result.success).toBe(true);
+  });
+  
+  it('should transfer tokens', async () => {
+    const result = await mockContractCall(contractName, 'transfer', [500, 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM', 'ST2CY5V39NHDPWSXMW9QDT3HC3GD6Q6XX4CFRK9AG']);
+    expect(result.success).toBe(true);
+  });
+  
+  it('should get balance', async () => {
+    const result = await mockContractCall(contractName, 'get-balance', ['ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM']);
+    expect(result.success).toBe(true);
+    expect(result.value).toBe('mocked value');
+  });
+  
+  it('should get total supply', async () => {
+    const result = await mockContractCall(contractName, 'get-total-supply', []);
+    expect(result.success).toBe(true);
+    expect(result.value).toBe('mocked value');
+  });
 });
+

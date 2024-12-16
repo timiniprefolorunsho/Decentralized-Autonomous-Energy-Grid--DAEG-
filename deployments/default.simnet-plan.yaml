@@ -60,6 +60,11 @@ plan:
             path: contracts/energy-token.clar
             clarity-version: 2
         - emulated-contract-publish:
+            contract-name: energy-trading
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/energy-trading.clar
+            clarity-version: 2
+        - emulated-contract-publish:
             contract-name: pricing-oracle
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/pricing-oracle.clar

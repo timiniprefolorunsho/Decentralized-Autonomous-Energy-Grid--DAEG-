@@ -14,6 +14,12 @@ epoch = 2.5
 path = 'contracts/pricing-oracle.clar'
 clarity_version = 2
 epoch = 2.5
+
+[contracts.smart-meter]
+path = 'contracts/smart-meter.clar'
+clarity_version = 2
+epoch = 2.5
+
 [repl.analysis]
 passes = ['check_checker']
 

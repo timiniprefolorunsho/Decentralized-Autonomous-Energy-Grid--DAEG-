@@ -9,3 +9,9 @@ M
 contracts/pricing-oracle.clar,b/4/b49a57d5309403aa3922ef848a7cbb3542e98432
 L
 tests/pricing-oracle.test.ts,e/8/e81f6b9e881ae8ff80cbe8658a04e7fa31a819fd
+=
+Clarinet.toml,9/d/9d284ad9ceb4c6d6525244c8f2230e5943b9c9b2
+I
+tests/smart-meter.test.ts,4/4/4459dd9c435ff2637047f6bc8165a4b6f92a9a79
+J
+contracts/smart-meter.clar,2/7/276fff6a7bad7fb80bfe00f88e9ef5451ea53695

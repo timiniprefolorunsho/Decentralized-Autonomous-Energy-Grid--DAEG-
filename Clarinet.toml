@@ -1,0 +1,39 @@
+[project]
+name = 'Decentralized-Autonomous-Energy-Grid--DAEG-'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.daeg]
+path = 'contracts/daeg.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.energy-token]
+path = 'contracts/energy-token.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.energy-trading]
+path = 'contracts/energy-trading.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.pricing-oracle]
+path = 'contracts/pricing-oracle.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.smart-meter]
+path = 'contracts/smart-meter.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

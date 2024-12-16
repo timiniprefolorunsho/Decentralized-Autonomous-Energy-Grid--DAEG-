@@ -5,6 +5,11 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
+[contracts.daeg]
+path = 'contracts/daeg.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.energy-token]
 path = 'contracts/energy-token.clar'
 clarity_version = 2
@@ -19,7 +24,6 @@ epoch = 2.5
 path = 'contracts/smart-meter.clar'
 clarity_version = 2
 epoch = 2.5
-
 [repl.analysis]
 passes = ['check_checker']
 

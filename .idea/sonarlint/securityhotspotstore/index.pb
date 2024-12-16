@@ -15,3 +15,7 @@ I
 tests/smart-meter.test.ts,4/4/4459dd9c435ff2637047f6bc8165a4b6f92a9a79
 J
 contracts/smart-meter.clar,2/7/276fff6a7bad7fb80bfe00f88e9ef5451ea53695
+C
+contracts/daeg.clar,2/2/2229b5ca553e79a1cf8d60670ef7ed182207ad0f
+B
+tests/daeg.test.ts,8/0/8011ae8af8f25f9a8ff2b42a931c23e0b60048d6

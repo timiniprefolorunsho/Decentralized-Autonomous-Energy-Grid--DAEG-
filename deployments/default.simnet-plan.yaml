@@ -50,6 +50,11 @@ plan:
     - id: 0
       transactions:
         - emulated-contract-publish:
+            contract-name: daeg
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/daeg.clar
+            clarity-version: 2
+        - emulated-contract-publish:
             contract-name: energy-token
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/energy-token.clar
